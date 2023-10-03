@@ -1,0 +1,41 @@
+
+*{
+    margin:0%;
+    padding: 0%;
+}
+
+
+.letra-mediana{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.lista-nav li{
+    display: inline;
+    margin-right: 15px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    @include flex-column-center;
+}
